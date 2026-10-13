@@ -6,8 +6,14 @@
   <title>前往化玄的网站</title>
   <meta name="robots" content="noindex">
   <link rel="canonical" href="https://evoxuan.com/">
-  <script src="/redirect.js"></script>
-  <meta http-equiv="refresh" content="0;url=https://evoxuan.com/">
+  <script>
+const destination = new URL('https://evoxuan.com/');
+destination.pathname = window.location.pathname;
+destination.search = window.location.search;
+destination.hash = window.location.hash;
+window.location.replace(destination.href);
+</script>
+  <noscript><meta http-equiv="refresh" content="0;url=https://evoxuan.com/"></noscript>
 </head>
 <body><p>正在前往<a href="https://evoxuan.com/">化玄的网站</a>。</p></body>
 </html>
